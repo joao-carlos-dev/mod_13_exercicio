@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #008C8C;
+}
+
+header img {
+    padding: 10px;
+}
+
+header {
+    background-color: #002525;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+
+.navbar-toggler-icon {
+    background-color: #00DFDF;
+}
+
+#cabecalho img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+.nav-link, h1 {
+    color: #00DFDF;
+}
+
+
+section {
+    padding: 89px;
+}
+
+section h2 {
+    color: #002525;
+}
+
+.card {
+    background-color: #00DFDF;
+}
+
+.card-body p {
+    text-align: justify;
+}
+
+
+#contato {
+    background-color: #002525;
+    text-align: center;
+    color: #00DFDF;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#aba1,
+#aba2,
+#aba3 {
+    text-align: justify;
+    font-size: 20px;
+    color: #002525;
+}
+
+#aba1 strong {
+    border-bottom: 2px solid #002525;
+    font-size: 24px;
+}
+
+#aba1, #aba2, #aba3 a {
+    color: #002525;
+}
