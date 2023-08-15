@@ -34,87 +34,129 @@
                 </nav>
             </div>
         </div>
-    </header>
+    </header> <!-- fim cabecalho -->
 
-    <div class="container">
-        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
-            <section id="destaques">
-                <h2>Destaques</h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4">
-                            <article class="card text-bg-info">
-                                <header class="card-header">
-                                    Heroína
-                                </header>
-                                <img src="./img/novo_perso.jpg" alt="Imagem da nova personagem" />
-                                <div class="card-body">
-                                    <h4 class="card-title">Nova Personagem</h4>
-                                    <p class="card-text">
-                                        Com a chegada da nova temporada, também chega a nova personagem supurte,
-                                        Illari. Vêm com o kit da habilidades bem variado e promete ser um suporte
-                                        bem agressivo. Que tem origem em Runasapi, Peru.
-                                    </p>
-                                    <a href="./conteudo.html" class="btn btn-primary">Saiba mais</a>
-                                    <!-- <a href="./inicio.html">Incio</a> -->
-                                </div>
-                                <footer class="card-footer">
-                                    Postado em <time>10/08/2023 às 10:20</time>
-                                </footer>
-                            </article>
-                        </div>
-
-                        <div class="col-4">
-                            <article class="card text-bg-info">
-                                <header class="card-header">
-                                    Overwacth Invasão
-                                </header>
-                                <img src="./img/invasao_over.webp" alt="Imagens de um robo" />
-                                <div class="card-body">
-                                    <h4 class="card-title">Modo PVE</h4>
-                                    <p class="card-text">
-                                        Depois de vários e vários anos de espera o tão aguardado modo PVE chegou em
-                                        Overwatch 2. Overwatch 2: Invasão chega com missões nos países Brasil,
-                                        Canadá, Suécia e também no mapa de Kings Row.
-                                    </p>
-                                    <a href="./conteudo.html" class="btn btn-primary">Saiba mais</a>
-                                </div>
-                                <footer class="card-footer">
-                                    Postado em <time>10/08/2023 às 15:30</time>
-                                </footer>
-                            </article>
-                        </div>
-
-                        <div class="col-4">
-                            <article class="card text-bg-info">
-                                <header class="card-header">
-                                    Modo de Jogo PVP
-                                </header>
-                                <img src="./img/novo_modo_jogo.webp" alt="Foto de uma parte do novo mapa, Nova Junk City"/>
-                                <div class="card-body">
-                                    <h4 class="card-title">Ponto de Tumulto</h4>
-                                    <p class="card-text">
-                                        O novo modo de jogo PVP, ponto de tumulto já está disponível no modo casual.
-                                        Ele chega com dois mapas Suravasa e Nova Junk City. Este modo consiste em
-                                        três pontos de capturar, que serão revelados aleatoriamente durante o jogo.
-                                    </p>
-                                    <a href="./conteudo.html" class="btn btn-primary">Saiba mais</a>
-                                </div>
-                                <footer class="card-footer">
-                                    Postado em <time>09/08/2023 às 09:20</time>
-                                </footer>
-                            </article>
-                        </div>
+    <!-- inicio corousel -->
+    <div id="corousel">
+        <div id="carousel-img" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./img/1600_Illari.jpg" />
+                    <div class="carousel-caption">
+                        <a href="./conteudo.html">Nova Heroina</a>
+                        <!-- <a href="#aba1">Nova Heroina</a> -->
                     </div>
                 </div>
+
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./img/invasao.webp" />
+                    <div class="carousel-caption">
+                        <a href="./conteudo.html">Invasão</a>
+                    </div>
+                </div>
+
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./img/mapa_novo.png" />
+                    <div class="carousel-caption">
+                        <a href="./conteudo.html">Novo modo de jogo</a>
+                    </div>
+                </div>
+            </div>
+
+            <button data-bs-target="#carousel-img" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-img" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-img" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-img" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-img" data-bs-slide-to="2"></button>
+            </div>
         </div>
+    </div>
+    <!-- fim corousel -->
+
+    <div class="container" data-bs-spy="scroll" data-bs-target="#menu">
+        <section id="destaques">
+            <h2>Destaques</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                        <article class="card text-bg-info">
+                            <header class="card-header">
+                                Heroína
+                            </header>
+                            <img src="./img/novo_perso.jpg" alt="Imagem da nova personagem" />
+                            <div class="card-body">
+                                <h4 class="card-title">Nova Personagem</h4>
+                                <p class="card-text">
+                                    Com a chegada da nova temporada, também chega a nova personagem supurte,
+                                    Illari. Vêm com o kit da habilidades bem variado e promete ser um suporte
+                                    bem agressivo. Que tem origem em Runasapi, Peru.
+                                </p>
+                                <a href="./conteudo.html" class="btn btn-primary">Saiba mais</a>
+                                <!-- <a href="./inicio.html">Incio</a> -->
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>10/08/2023 às 10:20</time>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                        <article class="card text-bg-info">
+                            <header class="card-header">
+                                Overwacth Invasão
+                            </header>
+                            <img src="./img/invasao_over.webp" alt="Imagens de um robo" />
+                            <div class="card-body">
+                                <h4 class="card-title">Modo PVE</h4>
+                                <p class="card-text">
+                                    Depois de vários e vários anos de espera o tão aguardado modo PVE chegou em
+                                    Overwatch 2. Overwatch 2: Invasão chega com missões nos países Brasil,
+                                    Canadá, Suécia e também no mapa de Kings Row.
+                                </p>
+                                <a href="./conteudo.html" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>10/08/2023 às 15:30</time>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
+                        <article class="card text-bg-info">
+                            <header class="card-header">
+                                Modo de Jogo PVP
+                            </header>
+                            <img src="./img/novo_modo_jogo.webp" alt="Foto de uma parte do novo mapa, Nova Junk City" />
+                            <div class="card-body">
+                                <h4 class="card-title">Ponto de Tumulto</h4>
+                                <p class="card-text">
+                                    O novo modo de jogo PVP, ponto de tumulto já está disponível no modo casual.
+                                    Ele chega com dois mapas Suravasa e Nova Junk City. Este modo consiste em
+                                    três pontos de capturar, que serão revelados aleatoriamente durante o jogo.
+                                </p>
+                                <a href="./conteudo.html" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>09/08/2023 às 09:20</time>
+                            </footer>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="jogos">
             <h2>Jogos</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
                         <article class="card">
                             <header class="card-header">
                                 EC Sports FC 2024
@@ -127,7 +169,9 @@
                                     setembro e terá o atacante norueguês Erling Haaland, do Manchester City, como
                                     principal astro, estampando a capa do jogo.
                                 </p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                                <a href="https://www.ea.com/pt-br/games/ea-sports-fc/fc-24"
+                                    class="btn btn-primary">Saiba
+                                    mais</a>
                             </div>
                             <footer class="card-footer">
                                 Postado em <time>10/08/2023 às 10:20</time>
@@ -135,7 +179,7 @@
                         </article>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
                         <article class="card">
                             <header class="card-header">
                                 Exclusivo PS5
@@ -144,9 +188,14 @@
                             <div class="card-body">
                                 <h4 class="card-title">Marvel's Spider Man 2</h4>
                                 <p class="card-text">
-                                    O poder do simbionte obriga Peter e Miles a encarar um desafio sem igual que vai muito além de seus alter egos mascarados, já que precisam encontrar o equilíbrio entre suas vidas pessoais, amizades e o dever de proteger quem precisa.
+                                    O poder do simbionte obriga Peter e Miles a encarar um desafio sem igual que vai
+                                    muito
+                                    além de seus alter egos mascarados, já que precisam encontrar o equilíbrio entre
+                                    suas
+                                    vidas pessoais, amizades e o dever de proteger quem precisa.
                                 </p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                                <a href="https://www.playstation.com/pt-br/games/marvels-spider-man-2/"
+                                    class="btn btn-primary">Saiba mais</a>
                             </div>
                             <footer class="card-footer">
                                 Postado em <time>10/08/2023 às 10:20</time>
@@ -154,7 +203,7 @@
                         </article>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
                         <article class="card">
                             <header class="card-header">
                                 Survival horror
@@ -163,9 +212,13 @@
                             <div class="card-body">
                                 <h4 class="card-title">Alan Wake II</h4>
                                 <p class="card-text">
-                                    Alan Wake II é um próximo jogo de survival horror desenvolvido pela Remedy Entertainment e publicado pela Epic Games Publishing. Uma sequência de Alan Wake, o jogo está programado para ser lançado para diversas plataformas em 17 de outubro de 2023.
+                                    Alan Wake II é um próximo jogo de survival horror desenvolvido pela Remedy
+                                    Entertainment
+                                    e publicado pela Epic Games Publishing. Uma sequência de Alan Wake, o jogo está
+                                    programado para ser lançado para diversas plataformas em 17 de outubro de 2023.
                                 </p>
-                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                                <a href="https://store.epicgames.com/pt-BR/p/alan-wake-2" class="btn btn-primary">Saiba
+                                    mais</a>
                             </div>
                             <footer class="card-footer">
                                 Postado em <time>10/08/2023 às 10:20</time>
@@ -176,13 +229,14 @@
     </div>
 
 
-    <div class="contanier" id="contato">
-        <footer>
-            <p>Para mais informações, seguida as nossas redes sociais</p>
-            <img src="./img/logo_inst.png" alt="Logo instagram" />
-            <img src="./img/logo_face.png" alt="Logo Facebook" />
-            <img src="./img/YouTube_logo.png" alt="Logo Youtube" />
-        </footer>
+        <div class="contanier" id="contato">
+            <footer>
+                <p>Para mais informações, seguida as nossas redes sociais</p>
+                <img src="./img/logo_inst.png" alt="Logo instagram" />
+                <img src="./img/logo_face.png" alt="Logo Facebook" />
+                <img src="./img/YouTube_logo.png" alt="Logo Youtube" />
+            </footer>
+        </div>
     </div>
 
     <script src="./bibli/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
