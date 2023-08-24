@@ -94,8 +94,23 @@
         </footer>
     </div>
 
-
-
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let targetTagContentld = localStorage.getltem('targetTabContentld');
+            const tabContents = document.querySelectorAll('.nav-link');
+            if(targetTagContentld) {
+                tabContents.forEach(tab => tab.classList.remove('active'));
+                //remove a classe active de todas as tabs
+            
+                //encontra o botãode tab correspondente
+                const targetTabButton = document.querySelector(`[data-bs-target="${targetTagContentld}"]`);
+                
+            if(targetTabButton) {
+                targetTabButton.classList('active');
+            }
+        }
+        });
+    </script>
 
     <script src="./bibli/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
 </body>
