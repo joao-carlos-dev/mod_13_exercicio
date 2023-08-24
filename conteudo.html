@@ -41,15 +41,15 @@
         <h2>Destaque</h2>
         <div class="container">
             <nav class="nav nav-tabs">
-                <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active"
+                <button id="aba11" data-bs-toggle="tab" data-bs-target="#aba1" class="tabela nav-link active"
                     type="button">Heroína</button>
-                <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Overwacth
+                <button id="aba21" data-bs-toggle="tab" data-bs-target="#aba2" class="tabela nav-link" type="button">Overwacth
                     Invasão</button>
-                <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Modo de Jogo
+                <button id="aba31" data-bs-toggle="tab" data-bs-target="#aba3" class="tabela nav-link" type="button">Modo de Jogo
                     PVP</button>
             </nav>
-            <div class="tab-content">
-                <div class="tab-pane active" id="aba1">
+            <div class="tabela tab-content">
+                <div class="tabela tab-pane active" id="aba1">
                     <p>
                         </br></br>Como a última dos Guerreiros Inti, Illari é a portadora do poder do sol. Ela fará
                         qualquer coisa para compensar seu passado. </br></br>
@@ -67,7 +67,7 @@
                     <a href="https://overwatch.blizzard.com/pt-br/heroes/illari/" target="_blank" rel="noopener noreferrer" >Clique aqui para mais Informações</a>
                 </div>
 
-                <div class="tab-pane" id="aba2">
+                <div class="tabela tab-pane" id="aba2">
                     <p>
                     </br>Uma invasão global começou e cabe a você atender ao chamado, com as Missões de História da Invasão! O grupo ômnico rebelde Setor Nulo começou a atacar o Rio de Janeiro, Toronto e Gotemburgo, usando poderosos robôs de guerra para derrotar qualquer coisa que fique em seu caminho. Winston e sua equipe de ataque da Overwatch estão em uma missão para parar o Setor Nulo, e precisarão contar com aliados, antigos e novos, para fazer o que é preciso.
                         As Missões de História da Invasão são experiências cooperativas profundas e expansivas, nas quais uma equipe de quatro jogadores trabalhará para completar vários objetivos de missão em mapas enormes. Você não encontrará esse tipo de trabalho em equipe no jogo PvP tradicional. As escolhas de heróis também são personalizadas para cada Missão de História específica, e você pode se desafiar com quatro níveis diferentes de dificuldade.
@@ -75,7 +75,7 @@
                     <a href="https://overwatch.blizzard.com/pt-br/news/23989473/" target="_blank" rel="noopener noreferrer" >Clique aqui para mais Informações</a>
                 </div>
 
-                <div class="tab-pane" id="aba3">
+                <div class="tabela tab-pane" id="aba3">
                     <p>
                     </br>Ambas as equipes de cinco competem para serem as primeiras a capturar três pontos de controle. Essas áreas do mapa, chamadas de <strong>Ponto de Tumulto</strong>, serão reveladas uma a uma, com o próximo objetivo não liberado até que o anterior tenha sido capturado por qualquer equipe. O primeiro Ponto de Tumulto sempre estará localizado no centro do mapa para dar a ambas as equipes uma oportunidade igual, mas os locais restantes serão ativados em uma ordem aleatória. Isso deve garantir que cada partida pareça diferente e nenhuma das equipes ganhe vantagem aprendendo rotações.
                     </p>
@@ -94,25 +94,8 @@
         </footer>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let targetTagContentld = localStorage.getltem('targetTabContentld');
-            const tabContents = document.querySelectorAll('.nav-link');
-            if(targetTagContentld) {
-                tabContents.forEach(tab => tab.classList.remove('active'));
-                //remove a classe active de todas as tabs
-            
-                //encontra o botãode tab correspondente
-                const targetTabButton = document.querySelector(`[data-bs-target="${targetTagContentld}"]`);
-                
-            if(targetTabButton) {
-                targetTabButton.classList('active');
-            }
-        }
-        });
-    </script>
-
     <script src="./bibli/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
